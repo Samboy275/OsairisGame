@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemyPatrol : MonoBehaviour
+public class Mummy : MonoBehaviour
 {
     Rigidbody2D enemyRigidBody2D;
     public int UnitsToMove = 5;
