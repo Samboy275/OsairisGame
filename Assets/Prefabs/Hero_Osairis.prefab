@@ -10,8 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5999163747392650885}
   - component: {fileID: 5999163747392650884}
-  - component: {fileID: 5999163747392650886}
-  - component: {fileID: 5999163747392650883}
   m_Layer: 0
   m_Name: Hero_Osairis
   m_TagString: Untagged
@@ -49,7 +47,6 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -86,41 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5999163747392650886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5999163747392650882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b3cc3124030c734aa2e358972b23f0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fireball: {fileID: 1571000412453187969, guid: 287e61a17acff58409a17b6817aff82d,
-    type: 3}
-  fireposition: {fileID: 5999163747710380541}
-  anim: {fileID: 0}
---- !u!95 &5999163747392650883
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5999163747392650882}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 45e813d6bd212194980c6e32c27ffae5, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5999163747710380540
 GameObject:
   m_ObjectHideFlags: 0
