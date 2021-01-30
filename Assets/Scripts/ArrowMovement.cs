@@ -26,6 +26,7 @@ public class ArrowMovement : MonoBehaviour
     {
         if (collision.tag == "Player" || collision.tag == "SolidPlatform")
         {
+            GameManager.instance.destroyed = true;
             Destroy(gameObject);
         }
     }

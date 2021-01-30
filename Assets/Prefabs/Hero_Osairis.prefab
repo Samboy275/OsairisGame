@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5999163747392650885}
   - component: {fileID: 5999163747392650884}
+  - component: {fileID: 7156356441982392295}
+  - component: {fileID: 1346700638164539185}
   m_Layer: 0
   m_Name: Hero_Osairis
   m_TagString: Untagged
@@ -83,6 +85,50 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7156356441982392295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5999163747392650882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b3cc3124030c734aa2e358972b23f0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  speed: 0
+  jumpForce: 0
+  groundCheck: {fileID: 0}
+  checkRadius: 0
+  groundType:
+    serializedVersion: 2
+    m_Bits: 0
+  airJumpValue: 0
+  firePoint: {fileID: 0}
+  fireball: {fileID: 0}
+--- !u!50 &1346700638164539185
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5999163747392650882}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &5999163747710380540
 GameObject:
   m_ObjectHideFlags: 0
