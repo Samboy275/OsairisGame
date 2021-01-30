@@ -5,9 +5,11 @@ using UnityEngine;
 public class ArrowMovement : MonoBehaviour
 {
     private Rigidbody2D rb2d;
+    private Vector2 initial_position;
     public float speed = 5.0f;
     private void Awake()
     {
+        initial_position = transform.position;
         rb2d = GetComponent<Rigidbody2D>();
     }
     void Start()
@@ -26,8 +28,7 @@ public class ArrowMovement : MonoBehaviour
     {
         if (collision.tag == "Player" || collision.tag == "SolidPlatform")
         {
-            GameManager.instance.destroyed = true;
-            Destroy(gameObject);
+            transform.position = initial_position;
         }
     }
 }
