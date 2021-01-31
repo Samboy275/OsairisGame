@@ -8,6 +8,7 @@ TagManager:
   - Projectile
   - Enemy
   - KeyItem
+  - death
   layers:
   - Default
   - TransparentFX
