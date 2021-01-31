@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 10.0f;
     public float jumpForce = 10.0f;
 
-
+    public bool interact = false;
     private float moveInput;
     private Rigidbody2D rb;
     private bool facingR = true;
@@ -58,8 +58,11 @@ public class PlayerController : MonoBehaviour
     {
         if (PlayerHealth.Instance.Hp <= 0)
             isDead = true;
-        
-        if(!isDead)
+        if (Input.GetKey(KeyCode.E))
+        {
+
+        }
+        if (!isDead)
         {
             if (isGrounded)
             {
@@ -75,7 +78,7 @@ public class PlayerController : MonoBehaviour
                 anim.SetBool("Run", false);
             }
 
-
+           
             if (Input.GetButtonDown("Jump") && isGrounded)
             {
                 isGrounded = false;
@@ -139,6 +142,18 @@ public class PlayerController : MonoBehaviour
             isDead = true;
         }
     }
-
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "puzzleItem")
+        {
+            Debug.Log("puzzle p");
+   
+                collision.GetComponent<puzzler>().ChangeSprite();
+                interact = false;
+            
+               
+            
+        }
+    }
 }
 
