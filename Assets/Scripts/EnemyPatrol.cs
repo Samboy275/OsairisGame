@@ -11,6 +11,8 @@ public class EnemyPatrol : MonoBehaviour
     private float _endPos;
     public Animator anim;
     public bool _moveRight = true;
+    public GameObject Player;
+    private bool PlayerFound = false;
 
 
     // Use this for initialization
@@ -27,9 +29,9 @@ public class EnemyPatrol : MonoBehaviour
     // Update is called once per frame
     public void FixedUpdate()
     {
-        anim.SetBool("Run", true);
 
-        if (_moveRight)
+
+        if (_moveRight && !PlayerFound)
         {
             enemyRigidBody2D.velocity = (Vector2.right * EnemySpeed * Time.deltaTime);
             if (!_isFacingRight)
@@ -37,26 +39,44 @@ public class EnemyPatrol : MonoBehaviour
             
         }
 
-        if (enemyRigidBody2D.position.x >= _endPos)
+        if (enemyRigidBody2D.position.x >= _endPos && !PlayerFound)
             _moveRight = false;
 
-        if (!_moveRight)
+        if (!_moveRight && !PlayerFound)
         {
             enemyRigidBody2D.velocity = (-Vector2.right * EnemySpeed * Time.deltaTime);
             if (_isFacingRight)
                 Flip();
             
         }
-        if (enemyRigidBody2D.position.x <= _startPos)
+        if (enemyRigidBody2D.position.x <= _startPos && !PlayerFound)
             _moveRight = true;
 
-
+        if(Vector2.Distance(this.transform.position , Player.transform.position) < 2)
+        {
+            PlayerFound = true;
+            anim.SetBool("Attack", true);
+            anim.SetBool("Run", false);
+        }
+        else
+        {
+            PlayerFound = false;
+            anim.SetBool("Run", true);
+        }
     }
 
     public void Flip()
     {
         transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
         _isFacingRight = transform.localScale.x > 0;
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if(collision.transform.tag == "Player")
+        {
+            PlayerHealth.Instance.Hp -= 5;
+        }
     }
 
 }
