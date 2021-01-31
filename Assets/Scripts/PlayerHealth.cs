@@ -13,6 +13,7 @@ public class PlayerHealth : MonoBehaviour
     public Image fill;
     public float Hp = 100f ;
 
+    public bool getHeart = false;
 
     private void Start()
     {

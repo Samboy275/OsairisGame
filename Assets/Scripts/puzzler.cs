@@ -24,10 +24,13 @@ public class puzzler : MonoBehaviour
 
     public void ChangeSprite()
     {
-
-        wallSprtie.sprite = pallettes[currentIndex];
-        currentIndex++;
-        if (currentIndex >= size)
-            currentIndex = 0;
+        if(!CheckPuzzle.instance.done)
+        {
+            wallSprtie.sprite = pallettes[currentIndex];
+            currentIndex++;
+            if (currentIndex >= size)
+                currentIndex = 0;
+        }
+        
     }
 }

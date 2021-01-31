@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -49093,18 +49093,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 557634695, guid: e12e7923d3618c14a9414907192dd8de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.629
+      objectReference: {fileID: 0}
     - target: {fileID: 647507348, guid: e12e7923d3618c14a9414907192dd8de, type: 3}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: fa6d8721efbb46543bb40799962e4cc7, type: 2}
     - target: {fileID: 1024971400, guid: e12e7923d3618c14a9414907192dd8de, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.87
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1024971400, guid: e12e7923d3618c14a9414907192dd8de, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.01
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1024971403, guid: e12e7923d3618c14a9414907192dd8de, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1886759314}
     - target: {fileID: 1547160398, guid: e12e7923d3618c14a9414907192dd8de, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -49131,7 +49139,7 @@ PrefabInstance:
     - target: {fileID: 5999163747392650885, guid: e12e7923d3618c14a9414907192dd8de,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.45
       objectReference: {fileID: 0}
     - target: {fileID: 5999163747392650885, guid: e12e7923d3618c14a9414907192dd8de,
         type: 3}
@@ -49495,7 +49503,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 15e84383d8c94a64b9eb7420ee0d165f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.09
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0

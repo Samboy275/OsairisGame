@@ -13,29 +13,39 @@ public class CheckPuzzle : MonoBehaviour
     /// 
     /// hint to the puzzle "the middle man reflects the pictures of the opposing side to the other"
     /// </summary>
+    public static CheckPuzzle instance;
     public Sprite[] correctPattern;
     public SpriteRenderer[] playerInput;
-
+    public GameObject heart;
+    public Transform spawnHeart;
     bool  solved = false;
+    public bool done = false;
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (!instance)
+            instance = this;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(solved)
+        if (!done)
+
         {
-            Debug.Log("solved");
-        }
-        else
-        {
-            if (correctPattern[0] == playerInput[0].sprite &&
-                correctPattern[1] == playerInput[1].sprite &&
-                correctPattern[2] == playerInput[2].sprite)
-                solved = true;
+            if (solved)
+            {
+                done = true;
+                Instantiate(heart, new Vector3(spawnHeart.position.x, spawnHeart.position.y, 0), Quaternion.identity);
+                Debug.Log("solved");
+            }
+            else
+            {
+                if (correctPattern[0] == playerInput[0].sprite &&
+                    correctPattern[1] == playerInput[1].sprite &&
+                    correctPattern[2] == playerInput[2].sprite)
+                    solved = true;
+            }
         }
     }
 }

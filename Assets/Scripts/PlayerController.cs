@@ -137,6 +137,12 @@ public class PlayerController : MonoBehaviour
             PlayerHealth.Instance.getKey = true;
             Destroy(collision.gameObject);
         }
+        else if(collision.collider.tag == "heart")
+        {
+            Debug.Log("got heart");
+            PlayerHealth.Instance.getHeart = true;
+            Destroy(collision.gameObject);
+        }
         else if(collision.collider.tag == "death")
         {
             isDead = true;
