@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: gradiant
   m_EditorClassIdentifier: 
   colorMode: 2
-  topLeft: {r: 1, g: 0.7075472, b: 0.07676221, a: 1}
-  topRight: {r: 1, g: 0.7075472, b: 0.07676221, a: 1}
-  bottomLeft: {r: 0.16981131, g: 0.16981131, b: 0.16981131, a: 1}
-  bottomRight: {r: 0.16981131, g: 0.16981131, b: 0.16981131, a: 1}
+  topLeft: {r: 0.27615115, g: 0.7075472, b: 0.07676221, a: 1}
+  topRight: {r: 0.27615115, g: 0.7075472, b: 0.07676221, a: 1}
+  bottomLeft: {r: 0, g: 0, b: 0, a: 1}
+  bottomRight: {r: 0, g: 0, b: 0, a: 1}
