@@ -121,11 +121,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 176
+        y: 112
         width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 96
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -141,12 +141,12 @@ TextureImporter:
       name: Column_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 160
+        x: 48
+        y: 112
         width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 96
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -162,12 +162,12 @@ TextureImporter:
       name: Column_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 144
+        x: 96
+        y: 112
         width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 96
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -184,11 +184,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
+        y: 0
         width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 96
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -196,48 +196,6 @@ TextureImporter:
       bones: []
       spriteID: 3d3581caa47dea0e0800000000000000
       internalID: -2256629647551212589
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Column_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 112
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 687326201f4db6e80800000000000000
-      internalID: -8184213766223546490
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Column_5
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 96
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0c1723ade50523a70800000000000000
-      internalID: 8805188589780627904
       vertices: []
       indices: 
       edges: []

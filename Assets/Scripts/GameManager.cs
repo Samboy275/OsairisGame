@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -26,6 +27,9 @@ public class GameManager : MonoBehaviour
            
     }
 
-
+    public void LoadNextScene()
+    {
+        EditorSceneManager.LoadScene(EditorSceneManager.GetActiveScene().buildIndex + 1);
+    }
     
 }
