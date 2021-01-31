@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1571000412453187978}
   m_Layer: 0
   m_Name: FireBall
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50,7 +50,6 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -73,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1347551925
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -6607481912129624618, guid: 6b27e70261223dd42ad1311efd26ee0a,
     type: 3}
@@ -118,7 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca6a757b09384b043a8cb0a94121ebaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireSpeed: 20
+  fireSpeed: 10
 --- !u!61 &1571000412453187979
 BoxCollider2D:
   m_ObjectHideFlags: 0

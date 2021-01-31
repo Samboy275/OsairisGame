@@ -5,17 +5,18 @@ using UnityEngine;
 public class Fireball : MonoBehaviour
 {
 
-    public float fireSpeed = 20;
+    public float fireSpeed = 10;
     private Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        rb.velocity = transform.right * fireSpeed;
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        rb.AddForce(Vector2.right * fireSpeed);
+        Destroy(gameObject);
+        
     }
 }
