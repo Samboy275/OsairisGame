@@ -40,11 +40,7 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
        // isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, groundType);
-<<<<<<< HEAD
         
-=======
-        //if(inputEnabled)
->>>>>>> 75ae03cb2ae35797d5fe5109e44bb03b9d3d4bf9
         moveInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
         if (!facingR && moveInput > 0)

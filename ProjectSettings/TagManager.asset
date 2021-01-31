@@ -5,12 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - SolidPlatform
-<<<<<<< HEAD
   - Projectile
-=======
-  - FireBall
-  - Enemy
->>>>>>> 75ae03cb2ae35797d5fe5109e44bb03b9d3d4bf9
   layers:
   - Default
   - TransparentFX
