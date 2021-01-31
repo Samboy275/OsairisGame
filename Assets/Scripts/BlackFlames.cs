@@ -7,6 +7,10 @@ public class BlackFlames : MonoBehaviour
     [SerializeField]
     private float speed = 10.0f;
     private float endYPOS = 33.0f;
+
+    public float Damage = 1f;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +27,14 @@ public class BlackFlames : MonoBehaviour
         else
         {
             Destroy(this);
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if(collision.transform.tag == "Player")
+        {
+            PlayerHealth.Instance.Hp -= Damage;
         }
     }
 }

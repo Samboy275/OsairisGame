@@ -8,6 +8,7 @@ public class ArrowMovement : MonoBehaviour
     public Vector2 initial_position;
   
     public float speed = 5.0f;
+    public float damage = 10f;
     private void Awake()
     {
         initial_position = transform.position;
@@ -32,6 +33,11 @@ public class ArrowMovement : MonoBehaviour
             this.enabled = false;
             transform.position = initial_position;
             
+        }
+
+        if(collision.tag == "Player")
+        {
+            PlayerHealth.Instance.Hp -= damage;
         }
     }
 }
