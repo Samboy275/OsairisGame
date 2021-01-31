@@ -15,4 +15,6 @@ public class KeyOfLife : MonoBehaviour
     {
         transform.Rotate(0, 50 * Time.deltaTime, 0);
     }
+
+
 }

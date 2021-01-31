@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
 
     public int airJumpValue;
     private int airJumps;
+    private bool isDead;
 
     public Transform firePoint;
     public GameObject fireball;
@@ -40,7 +41,7 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
        // isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, groundType);
-        
+        if(!isDead)
         moveInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
         if (!facingR && moveInput > 0)
@@ -55,8 +56,11 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
+        if (PlayerHealth.Instance.Hp <= 0)
+            isDead = true;
         
-        
+        if(!isDead)
+        {
             if (isGrounded)
             {
                 anim.SetBool("Jump", false);
@@ -75,7 +79,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetButtonDown("Jump") && isGrounded)
             {
                 isGrounded = false;
-                inputEnabled = false;
+               
                 anim.SetBool("Jump", true);
                 rb.velocity = Vector2.up * jumpForce;
             }
@@ -91,6 +95,12 @@ public class PlayerController : MonoBehaviour
                 StartCoroutine(shoot());
 
             }
+        }    
+        else
+        {
+            //player is dead
+            GameManager.instance.PlayerDied();
+        }
 
       
 
@@ -116,7 +126,17 @@ public class PlayerController : MonoBehaviour
         if(collision.collider.gameObject.layer == LayerMask.NameToLayer("ground"))
         {
             isGrounded = true;
-            inputEnabled = true;
+            
+        }
+        else if (collision.collider.tag == "KeyItem")
+        {
+            Debug.Log("GotKey");
+            PlayerHealth.Instance.getKey = true;
+            Destroy(collision.gameObject);
+        }
+        else if(collision.collider.tag == "death")
+        {
+            isDead = true;
         }
     }
 

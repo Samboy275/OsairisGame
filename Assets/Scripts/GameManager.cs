@@ -6,8 +6,9 @@ using UnityEditor.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    
+    private bool gameOver = false;
 
+    
     [SerializeField]
     
     // Start is called before the first frame update
@@ -23,13 +24,31 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //open door for next lvl
         
+            
            
     }
 
     public void LoadNextScene()
     {
-        EditorSceneManager.LoadScene(EditorSceneManager.GetActiveScene().buildIndex + 1);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+
+    public void PlayerDied()
+    {
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "TheEscape")
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver1");
+        }
+        else if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Chamber of Seth")
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver2");
+        }
+    }
+
+
+    
     
 }

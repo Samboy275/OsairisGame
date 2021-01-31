@@ -6,6 +6,8 @@ TagManager:
   tags:
   - SolidPlatform
   - Projectile
+  - Enemy
+  - KeyItem
   layers:
   - Default
   - TransparentFX

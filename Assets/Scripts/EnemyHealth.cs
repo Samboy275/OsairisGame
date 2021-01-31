@@ -11,6 +11,7 @@ public class EnemyHealth : MonoBehaviour
     public Slider m_Slider;
     public Image fill;
     public float Hp = 100f;
+    public bool _zeroHealth = false;
 
 
     private void Start()
@@ -26,9 +27,13 @@ public class EnemyHealth : MonoBehaviour
         m_Slider.value = Hp;
 
         if (Hp <= 0)
+        {
             print("Enemy died");
+            _zeroHealth = true;
+        }
     }
 
+   
     void HealthBarController()
     {
         var sliderFill = m_Slider.value;

@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     public static PlayerHealth Instance;
 
     // public variables 
+    public bool getKey = false;
     public Slider m_Slider;
     public Image fill;
     public float Hp = 100f ;
@@ -26,7 +27,10 @@ public class PlayerHealth : MonoBehaviour
         m_Slider.value = Hp;
 
         if (Hp <= 0)
+        {
             print("Player died");
+        }
+            
     }
 
 

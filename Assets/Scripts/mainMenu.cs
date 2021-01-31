@@ -6,7 +6,7 @@ public class mainMenu : MonoBehaviour
     
     public void LSelect(string levelName)
     {
-        SceneManager.LoadScene(levelName);
+      //  SceneManager.LoadScene(levelName);
     }
 
     public void exitGame()
