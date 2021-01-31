@@ -5,7 +5,8 @@ using UnityEngine;
 public class ArrowMovement : MonoBehaviour
 {
     private Rigidbody2D rb2d;
-    private Vector2 initial_position;
+    public Vector2 initial_position;
+  
     public float speed = 5.0f;
     private void Awake()
     {
@@ -28,7 +29,9 @@ public class ArrowMovement : MonoBehaviour
     {
         if (collision.tag == "Player" || collision.tag == "SolidPlatform")
         {
+            this.enabled = false;
             transform.position = initial_position;
+            
         }
     }
 }

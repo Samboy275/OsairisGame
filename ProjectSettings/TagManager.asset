@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - SolidPlatform
+  - Projectile
   layers:
   - Default
   - TransparentFX

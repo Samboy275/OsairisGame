@@ -38,6 +38,15 @@ TextureImporter:
   - first:
       213: -9077708472257629305
     second: Mummy_11
+  - first:
+      213: -7555039879145631592
+    second: Mummy_12
+  - first:
+      213: -2367462005987519629
+    second: Mummy_13
+  - first:
+      213: 1613321934942184280
+    second: Mummy_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -159,8 +168,8 @@ TextureImporter:
       name: Mummy_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 47
+        x: 64
+        y: 79
         width: 32
         height: 32
       alignment: 0
@@ -180,8 +189,8 @@ TextureImporter:
       name: Mummy_3
       rect:
         serializedVersion: 2
-        x: 32
-        y: 47
+        x: 96
+        y: 79
         width: 32
         height: 32
       alignment: 0
@@ -201,8 +210,8 @@ TextureImporter:
       name: Mummy_4
       rect:
         serializedVersion: 2
-        x: 64
-        y: 47
+        x: 128
+        y: 79
         width: 32
         height: 32
       alignment: 0
@@ -222,7 +231,7 @@ TextureImporter:
       name: Mummy_5
       rect:
         serializedVersion: 2
-        x: 96
+        x: 0
         y: 47
         width: 32
         height: 32
@@ -243,7 +252,7 @@ TextureImporter:
       name: Mummy_6
       rect:
         serializedVersion: 2
-        x: 128
+        x: 32
         y: 47
         width: 32
         height: 32
@@ -264,8 +273,8 @@ TextureImporter:
       name: Mummy_7
       rect:
         serializedVersion: 2
-        x: 0
-        y: 15
+        x: 64
+        y: 47
         width: 32
         height: 32
       alignment: 0
@@ -285,8 +294,8 @@ TextureImporter:
       name: Mummy_8
       rect:
         serializedVersion: 2
-        x: 32
-        y: 15
+        x: 96
+        y: 47
         width: 32
         height: 32
       alignment: 0
@@ -306,8 +315,8 @@ TextureImporter:
       name: Mummy_9
       rect:
         serializedVersion: 2
-        x: 64
-        y: 15
+        x: 128
+        y: 47
         width: 32
         height: 32
       alignment: 0
@@ -327,7 +336,7 @@ TextureImporter:
       name: Mummy_10
       rect:
         serializedVersion: 2
-        x: 96
+        x: 0
         y: 15
         width: 32
         height: 32
@@ -348,7 +357,7 @@ TextureImporter:
       name: Mummy_11
       rect:
         serializedVersion: 2
-        x: 128
+        x: 32
         y: 15
         width: 32
         height: 32
@@ -361,6 +370,90 @@ TextureImporter:
       bones: []
       spriteID: 783b7808d30850280800000000000000
       internalID: -9077708472257629305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mummy_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 79
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 247ccca57e2b55560800000000000000
+      internalID: 7301939077581686594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mummy_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 15
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8905d9b124b172790800000000000000
+      internalID: -7555039879145631592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mummy_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 15
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37351e159d5152fd0800000000000000
+      internalID: -2367462005987519629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mummy_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 15
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 853239880cba36610800000000000000
+      internalID: 1613321934942184280
       vertices: []
       indices: 
       edges: []

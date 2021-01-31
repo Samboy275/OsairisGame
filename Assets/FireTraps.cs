@@ -19,7 +19,7 @@ public class FireTraps : MonoBehaviour
         for(int i = 0; i < size; i++)
         {
             
-            arrows[i] = Instantiate(arrow, spawnPosition , Quaternion.AngleAxis(270, Vector3.forward));
+            arrows[i] = Instantiate(arrow, spawnPosition += Vector2.right * 0.7f, Quaternion.AngleAxis(270, Vector3.forward));
             arrows[i].GetComponent<ArrowMovement>().enabled = false;
         }
     }
@@ -34,17 +34,18 @@ public class FireTraps : MonoBehaviour
             arrows[index].transform.position = spawnPosition;
             arrows[index].GetComponent<ArrowMovement>().enabled = true;
 
+            
             index++;
-            spawnPosition += Vector2.right * 0.7f ;
+            
             if(index >= size)
             {
-                spawnPosition -= Vector2.right * 9 * 0.7f;
+                
                 index = 0;
             }
         }
         
     }
-
+    
 
    
 }

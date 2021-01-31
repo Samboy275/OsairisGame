@@ -132,7 +132,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &-4380812500096441658
 Animator:
   serializedVersion: 3
@@ -165,6 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UnitsToMove: 5
-  EnemySpeed: 500
+  EnemySpeed: 20
   _isFacingRight: 0
+  anim: {fileID: 0}
   _moveRight: 1

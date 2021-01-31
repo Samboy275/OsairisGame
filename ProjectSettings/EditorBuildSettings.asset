@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TheEscape.unity
     guid: c034f5a66c850104e80f8bae4775e2a6
+  - enabled: 1
+    path: Assets/Scenes/Chamber of Seth.unity
+    guid: 08d9680a8a253974794ede394f48867b
   m_configObjects: {}

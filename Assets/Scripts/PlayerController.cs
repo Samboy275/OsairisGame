@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
        // isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, groundType);
-        if(inputEnabled)
+        
         moveInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
         if (!facingR && moveInput > 0)
@@ -55,8 +55,8 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        if(inputEnabled)
-        {
+        
+        
             if (isGrounded)
             {
                 anim.SetBool("Jump", false);
@@ -92,8 +92,7 @@ public class PlayerController : MonoBehaviour
 
             }
 
-        }
-
+      
 
     }
     void Flip()
